@@ -37,33 +37,34 @@ const wraper2={
       <Grid container  sx={wraper2}>
         <Grid container display={"flex"} spacing={1}  justifyContent={"center"}  sm={6} md={6}  xs={12} >
             <Grid item   xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://www.linkedin.com/in/firas-jedidi-827328232/" rel="noopener  noreferrer  " target='_blank'>
+              <a href="https://www.linkedin.com/in/firas-jedidi-827328232/"  target='_blank' rel="noopener  noreferrer ">
                 <BsLinkedin color='white'   size={"medium"} />
               </a>
             </Grid>
             <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://github.com/firasjedidi"   target="_blank"  rel="noopener  noreferrer ">
+              <a href="https://github.com/firasjedidi"   target="_blank"  rel="noopener  noreferrer " >
                 <BsGithub color='white'  size={"medium"}/>
               </a>
-              <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
+             
+            </Grid> 
+            <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
               <a href="mailto:firasjedidi0713@gmail.com">
                 <BsGoogle color='white'  size={"medium"}/>
               </a>
-            </Grid>
-              <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}} >
-              <a href="https://www.instagram.com/fj16th/"  rel="noopener  noreferrer " target='_blank'>
+            </Grid> 
+             <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}} >
+              <a href="https://www.instagram.com/fj16th/"   target='_blank' rel="noopener  noreferrer "
+>
                 <BsInstagram color='white'  size={"medium"}/>
               </a>
-            </Grid>
             </Grid>
             <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}}  >
              <a href="tel:+216 20924041">
                 <BsWhatsapp color='white'   size={"medium"}/>
               </a>
-             
             </Grid> 
             <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://www.facebook.com/FJ16TH" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/FJ16TH" target="_blank"  rel="noopener  noreferrer ">
                 <BsFacebook color='white'  size={"medium"}/>
               </a>
             </Grid>
