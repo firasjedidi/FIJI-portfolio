@@ -16,10 +16,10 @@ useEffect(() => {
     localStorage.setItem('skils',JSON.stringify(skils))
   }
   setdata()
-  
+ 
   
 }, [])
-  
+   console.clear()
  
   return (
     <div className={styles.container} >
