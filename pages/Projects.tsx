@@ -125,7 +125,7 @@ const thedescription={
             padding:
              {xs:"0.1em 0",sm:"0.5em 0"},
           }} >Projects</Typography>
-          <Typography variant='h4'>What I've Built</Typography>
+          <Typography variant='h4'>What I&#39;ve Built</Typography>
       </Box>
       <Grid container  spacing={1.5} sx={wraper2} >
       {projects.map((project:any,id:number)=>(

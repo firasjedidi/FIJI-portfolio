@@ -1,4 +1,4 @@
-import React ,{useEffect, useState}from 'react'
+import React ,{useEffect, useState,useCallback}from 'react'
 import { useRouter } from "next/router";
 import styles from '../styles/Home.module.css'
 import projects from './api/projects'
@@ -35,7 +35,7 @@ const slide={
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 :
     currentSlide + 1);
   }
-  function auto() {
+  const auto = ()=> {
     slideInterval = setInterval(nextSlide, 7000)
   }
 
@@ -54,7 +54,7 @@ const slide={
     setProject(filtered)
     setslideLength(filtered[0].img.length)
     }
-  }, [router.isReady]);
+  }, [router.isReady,id]);
   
  
    

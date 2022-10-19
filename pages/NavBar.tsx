@@ -83,7 +83,7 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
               height: "100vh",top:"3.5em",transition:"ease-in",transitionDuration:"100ms",
               
              }}>
-              <Typography align='center'm={"2em 0.5em 1em"} color='InfoText' >Let's build something legendary together</Typography>
+              <Typography align='center'm={"2em 0.5em 1em"} color='InfoText' >Let&apos;s build something legendary together</Typography>
              <Divider sx={{backgroundColor:"InfoText"}} variant="middle" />
             {pages.map((page) => (
               <MenuItem key={page}   onClick={handleCloseNavMenu}sx={{m:{xs:"1em ",sm:"1.2em"},p:{xs:"1.1em 3em",sm:"1.1em 2.5em"},":hover":{backgroundColor:"rgba(255,255,255,0.1)"},}} >
@@ -92,7 +92,7 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
                 </Link>
               </MenuItem>
             ))}
-             <Typography align='left'm={"3em 2em 1em "} color='InfoText' >Let's Connect</Typography>
+             <Typography align='left'm={"3em 2em 1em "} color='InfoText' >Let&apos;s Connect</Typography>
             <Divider sx={{backgroundColor:"ButtonFace",justifyItems:"center"}} variant="middle" />
             <Box sx={{display:"flex",justifyContent:"space-between",m:{xs:"1em ",sm:"2em"}}}>
               <a href="https://www.linkedin.com/in/firas-jedidi-827328232/"  target="_blank" rel="noopener noreferrer ">

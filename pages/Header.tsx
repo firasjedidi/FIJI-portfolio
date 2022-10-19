@@ -28,7 +28,7 @@ const wraper={
               /> 
             </Typography>
             <Typography color={"InfoText"}  marginTop={2}>
-             Hi, I'm a full-stack JS developer, I'm a hard worker, and a fast learner, currently, I'm looking for an excellent position to develop my technical skills.
+             Hi, I&apos;m a full-stack JS developer, I&apos;m a hard worker, and a fast learner, currently, I&apos;m looking for an excellent position to develop my technical skills.
             </Typography>
           </Box>
         </Grid>
