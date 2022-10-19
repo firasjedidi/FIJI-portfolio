@@ -1,4 +1,4 @@
-import React ,{useEffect}from 'react'
+import React from 'react'
 import styles from '../styles/Home.module.css'
 import  Header  from './Header'
 import  About  from './About'
@@ -10,10 +10,8 @@ import Head from 'next/head'
 import projects from './api/projects'
 import skils from './api/skils';
 export default function Home() {
-  useEffect(()=>{
     localStorage.setItem('projects',JSON.stringify(projects))
     localStorage.setItem('skils',JSON.stringify(skils))
-  },[])
   return (
     <div className={styles.container} >
       <Head>

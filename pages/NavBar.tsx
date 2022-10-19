@@ -33,7 +33,7 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
 
 
   return (
-    <AppBar position="absolute"  className={styles.bg}>
+    <AppBar  sx={{ background: "#0A1929",width: "100%",opacity:" 0.7",position:"absolute"}} >
     <Container >
       <Toolbar disableGutters >
         <Icon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}> <BsCodeSlash  /></Icon>
