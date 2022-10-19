@@ -18,8 +18,8 @@ export default function Home() {
     <div className={styles.container} >
       <Head>
       <title>FIJI portfolio</title>
-      <meta name='description' content='I hope this tutorial is helpful for you' />
       <link rel="icon" style={{width:"100%"}} href="https://res.cloudinary.com/dod9yhmlt/image/upload/v1666117613/Peachpuff_Brush_Stroke_Photography_Logo__1_-removebg-preview_ced3ka.png" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <NavBar/>
       <Header/>

@@ -14,8 +14,7 @@ const wraper={
     <section className={styles.section} id="Home" >
       <Grid container spacing={1} sx={wraper}>
         <Grid item md={6}  xs={12} >
-          <Box sx={{ m:{xs:"3em 2em ",sm:"3em ",md:"7em 1em",lg:"9em 6em" },
-}} >
+          <Box sx={{ m:{xs:"3em 2em ",sm:"3em ",md:"7em 1em",lg:"9em 6em" },}} >
             <Typography variant='h4' fontSize={"2.5em"}  >
               <Typewriter
                 options={{

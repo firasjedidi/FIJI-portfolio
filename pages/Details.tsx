@@ -42,7 +42,6 @@ const slide={
     useEffect(() => {
       setCurrentSlide(0)}
     ,[])
-    
     useEffect(()=> {
       auto()
       return () => {clearInterval(slideInterval);}
