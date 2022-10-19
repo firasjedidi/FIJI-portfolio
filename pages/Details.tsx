@@ -56,10 +56,6 @@ const slide={
     }
   }, [router.isReady,id]);
   
- 
-   
- 
-
   return (
     <section className={styles.section}>
       <NavBar/>
