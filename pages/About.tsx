@@ -12,7 +12,7 @@ const wraper={
     <section className={styles.section} id="About"  >
       <Grid container justifyContent={"center"} spacing={1} >
         <Grid item md={6} lg={6} sx={wraper} sm={6} xs={12}>
-            <Image layout="responsive" width={40}  height={40}  objectFit="scale-down"   src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852238/man-thinking-about-load-561228-unscreen_glybkn.gif"   alt="" blurDataURL='true' />
+            <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" alt='developer'   src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852238/man-thinking-about-load-561228-unscreen_glybkn.gif"   blurDataURL='true' />
         </Grid>
         <Grid item lg={6} md={6} sm={6} xs={12} >
           <Box sx={{margin:{xs:"-10.5em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }}}>

@@ -37,19 +37,24 @@ const wraper2={
       <Grid container  sx={wraper2}>
         <Grid container display={"flex"} spacing={1}  justifyContent={"center"}  sm={6} md={6}  xs={12} >
             <Grid item   xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://www.linkedin.com/in/firas-jedidi-827328232/" rel="noreferrer" target={'_blank'}>
+              <a href="https://www.linkedin.com/in/firas-jedidi-827328232/" rel="noreferrer" target='_blank'>
                 <BsLinkedin color='white'   size={"medium"} />
               </a>
             </Grid>
-            <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}} >
-              <a href="https://www.instagram.com/fj16th/">
+            <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
+              <a href="https://github.com/firasjedidi"   target="_blank"  rel="noreferrer">
+                <BsGithub color='white'  size={"medium"}/>
+              </a>
+              <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
+              <a href="mailto:firasjedidi0713@gmail.com">
+                <BsGoogle color='white'  size={"medium"}/>
+              </a>
+            </Grid>
+              <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}} >
+              <a href="https://www.instagram.com/fj16th/"  rel="noreferrer" target='_blank'>
                 <BsInstagram color='white'  size={"medium"}/>
               </a>
             </Grid>
-            <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://github.com/firasjedidi"   target="_blank">
-                <BsGithub color='white'  size={"medium"}/>
-              </a>
             </Grid>
             <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}}  >
              <a href="tel:+216 20924041">
@@ -58,19 +63,15 @@ const wraper2={
              
             </Grid> 
             <Grid item xs={3} sm={3} md={3} lg={3} style={{margin:"0.5em "}}  >
-              <a href="https://www.facebook.com/FJ16TH" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/FJ16TH" target="_blank" rel="noopener">
                 <BsFacebook color='white'  size={"medium"}/>
               </a>
             </Grid>
-            <Grid item xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
-              <a href="mailto:firasjedidi0713@gmail.com">
-                <BsGoogle color='white'  size={"medium"}/>
-              </a>
-            </Grid>
+           
         </Grid>
         <Grid item sm={6} md={6}  xs={12}
             >
-              <Image layout="responsive" width="100%"  height="100%"   
+              <Image layout="responsive" width="100%"  height="100%"   alt='developer'
               src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852048/young-say-hello-4788642-398830-unscreen_ypc1np.gif" blurDataURL='true' />
         </Grid>
       </Grid>

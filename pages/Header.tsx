@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Typewriter from 'typewriter-effect';
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image';
 const wraper={ 
   margin:{xs:"3em 0",sm:"3em 0",md:"7em 0",lg:"9em 0" },
@@ -36,7 +36,8 @@ const wraper={
         <Grid item md={6}  xs={12} 
             sx={{m:{sm:"-6.5em 1em" , md:"-4em 0"}}}
             >
-              <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665838969/web-application-development-40-unscreen_q9jlef.gif"  blurDataURL='true'/>
+              <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" 
+              src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665838969/web-application-development-40-unscreen_q9jlef.gif" alt='developer' blurDataURL='true'/>
         </Grid>
       </Grid>
       

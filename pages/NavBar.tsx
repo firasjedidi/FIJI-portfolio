@@ -95,19 +95,19 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
              <Typography align='left'm={"3em 2em 1em "} color='InfoText' >Let's Connect</Typography>
             <Divider sx={{backgroundColor:"ButtonFace",justifyItems:"center"}} variant="middle" />
             <Box sx={{display:"flex",justifyContent:"space-between",m:{xs:"1em ",sm:"2em"}}}>
-            <a href="https://www.linkedin.com/in/firas-jedidi-827328232/" target={'_blank'}>
+            <a href="https://www.linkedin.com/in/firas-jedidi-827328232/"  target="_blank" rel="noopener ">
                 <BsLinkedin color='white'   />
             </a>
-            <a href="https://www.instagram.com/fj16th/">
+            <a href="https://www.instagram.com/fj16th/"  target="_blank" rel="noopener ">
                 <BsInstagram color='white'  />
               </a>
-              <a href="https://github.com/firasjedidi" target="_blank">
+              <a href="https://github.com/firasjedidi"  target="_blank" rel="noopener ">
                 <BsGithub color='white'  />
               </a>
               <a href="tel:+216 20924041">
                 <BsWhatsapp color='white' />
               </a>
-              <a href="https://www.facebook.com/FJ16TH" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/FJ16TH" target="_blank" rel="noopener ">
                 <BsFacebook color='white' />
               </a>
               <a href="mailto:firasjedidi0713@gmail.com">

@@ -100,7 +100,7 @@ const Skils = () => {
                 sx={thefront} 
                 className="front"
               >
-                <Image  src={skil.img}  layout='responsive'  blurDataURL='true' width="5em" height="2em" />
+                <Image  src={skil.img}  layout='responsive'  alt='developer' blurDataURL='true' width="5em" height="2em" />
                 <Typography align='center' noWrap>
                   {skil.name}
                   </Typography>

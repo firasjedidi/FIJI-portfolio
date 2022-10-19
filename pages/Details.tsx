@@ -70,7 +70,7 @@ const slide={
            {project.img.map((src:string,index:number)=>(
               <Box  key={index} sx={slide} className={index === currentSlide?"slide current":"slide"} >
                 {index === currentSlide &&(
-                    <Image src={src} className={styles.col} 
+                    <Image src={src} className={styles.col} alt='developer'
                     layout='fill' objectFit="cover" style={{position:"absolute", background:" rgb(0, 0, 0)",
                     opacity:".6"}} />
                 )}

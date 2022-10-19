@@ -135,7 +135,8 @@ const thedescription={
             <Paper 
              sx={thecard}
             >
-                <Image src={project.img[0]} className={"img"}  blurDataURL='true'  layout='responsive'  width="100%" height="100%"     />
+                <Image src={project.img[0]} className={"img"}  blurDataURL='true'  alt='developer'
+                layout='responsive'  width="100%" height="100%"     />
              <Box  
              sx={thedescription}
               className={"description"} 
