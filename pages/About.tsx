@@ -22,7 +22,7 @@ const wraper={
           <Typography variant='h3' m={2}>
             who I Am
           </Typography>
-          <Typography  color={"InfoText"} m={2}>
+          <Typography  sx={{color:"#fff"}}  m={2}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eum perspiciatis neque voluptatibus enim odit voluptates nostrum, suscipit culpa molestias iste quas pariatur, autem magnam molestiae fugit recusandae ab laudantium.
           </Typography>
           </Box>

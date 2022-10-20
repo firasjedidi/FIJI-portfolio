@@ -15,11 +15,14 @@ import Icon from '@mui/material/Icon';
 import styles from '../styles/Home.module.css'
 import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
-
 import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle ,BsCodeSlash} from "react-icons/bs";
 const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
-
- const NavBar = () => {
+const links={
+  m:{xs:"0.5em ",sm:"1.2em"},
+  p:{xs:"1.1em 3em",sm:"1.1em 2.5em"},
+  ":hover":{backgroundColor:"rgba(255,255,255,0.1)"},
+}
+ const NavBar = ({changeBgColor}:any) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -70,6 +73,7 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
           </IconButton>
           <Menu
             id="menu-appbar"
+            anchorEl={anchorElNav}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
@@ -78,15 +82,17 @@ const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
               top:"4em"
             }}
           >
-            <Paper sx={{
+            <Paper sx={changeBgColor?{
               backgroundColor:"#0A1929",position:"fixed",left:0,width:"50%",
-              height: "100vh",top:"3.5em",transition:"ease-in",transitionDuration:"100ms",
-              
+              height: "100vh",top:"3.5em",transition:"ease-in",transitionDuration:"10ms",opacity:" 0.7"
+             }:{
+              backgroundColor:"#0A1929",position:"fixed",left:0,width:"50%",
+              height: "100vh",top:"3.5em",transition:"ease-in",transitionDuration:"10ms",
              }}>
               <Typography align='center'm={"2em 0.5em 1em"} color='InfoText' >Let&apos;s build something legendary together</Typography>
              <Divider sx={{backgroundColor:"InfoText"}} variant="middle" />
             {pages.map((page) => (
-              <MenuItem key={page}   onClick={handleCloseNavMenu}sx={{m:{xs:"1em ",sm:"1.2em"},p:{xs:"1.1em 3em",sm:"1.1em 2.5em"},":hover":{backgroundColor:"rgba(255,255,255,0.1)"},}} >
+              <MenuItem key={page}   onClick={handleCloseNavMenu}sx={links} >
                 <Link href={`/#${page}`} color="#fff" underline="none" sx={{width:"100%"}}  >
                   {page} 
                 </Link>

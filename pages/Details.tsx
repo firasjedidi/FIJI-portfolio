@@ -58,7 +58,7 @@ const slide={
   
   return (
     <section className={styles.section}>
-      <NavBar/>
+      <NavBar changeBgColor={true} />
       {project.map((project:any,id:number)=>(
         <div key={id}>
           <Box  position='absolute' top={0} left={0} width="100%" height="40vh"  >
@@ -73,15 +73,15 @@ const slide={
             ))}
             <Box position='absolute' top={"70%"}  margin={"0 1em"}>
               <Typography variant='h4'>{project.name} </Typography>
-              <Typography color={"InfoText"}>{project.role}</Typography>
-              <Typography color={"InfoText"}>{project.duration}</Typography>
+              <Typography sx={{color:"#fff"}} >{project.role}</Typography>
+              <Typography sx={{color:"#fff"}} >{project.duration}</Typography>
             </Box>
           </Box>  
  
           <Grid container justifyContent={"space-around"}   m={"21em 0"}   padding={2} gap={7} >
             <Grid item lg={7} sm={5} md={4}xs={12}>
               <Typography variant="h6" p={"1em 0"}>Project</Typography>
-              <Typography color={"InfoText"} >{project.intro}</Typography>
+              <Typography sx={{color:"#fff"}}  >{project.intro}</Typography>
               <IconButton href={project.github} ><MdOutlineOpenInNew color='white'/></IconButton> 
             </Grid>
 
