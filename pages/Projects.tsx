@@ -28,7 +28,7 @@ const wraper2={
 
 const thecard={ 
   position: "relative",
-  width:{ xs:"60%",sm:"100%",md:"100%",lg:"100%" },
+  width:{ xs:"100%",sm:"100%",md:"100%",lg:"100%" },
   height: { xs:"9em",sm:"9em",md:"12em",lg:"14em" },
   margin:{xs:"0.5em",sm:"1em",md:"1em ",lg:"0.5em " },
   background:"  #0A1929" ,

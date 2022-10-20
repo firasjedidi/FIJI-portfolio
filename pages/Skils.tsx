@@ -28,7 +28,7 @@ const wraper2={
 }
 
 const thecard={ 
-  width:{ xs:"60%",sm:"100%",md:"100%",lg:"100%" },
+  width:{ xs:"100%",sm:"100%",md:"100%",lg:"100%" },
   height:{ xs:"12.5em",sm:"13em",md:"12em",lg:"14em" },
   margin:{xs:"0.1em 0.5em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   perspective:"800px",
