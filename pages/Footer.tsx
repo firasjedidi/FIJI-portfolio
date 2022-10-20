@@ -6,16 +6,16 @@ import Image from 'next/image';
 import Divider from '@mui/material/Divider';
 const wraper={ 
   padding:{
-    xs:"5em 2em  ",
-    sm:"5.5em 2em  0 2em ",
-    md:"5.5em 5.5em  0 5.5em ",
-    lg:"5em 5em  0 5em " 
+    xs:"5em 6em  0 6em  ",
+    sm:"5.5em 6em  0 6em ",
+    md:"5.5em 8em  0 8em ",
+    lg:"5em 9em  0 9em " 
   },
  
 }
 const wraper2={ 
   padding:{
-    xs:"0.5em 5em",
+    xs:"1em 5em",
     sm:"2em 5em",
     md:"1em 6em",
     lg:"-1em 6em "
@@ -27,8 +27,7 @@ const wraper2={
   return (
      <section className={styles.section2} id="Contact" >
       <Box sx={wraper} >
-        
-          <Typography variant='h4'>Get In Touch</Typography>
+          <Typography variant='h4' >Get In Touch</Typography>
       </Box>
       <Grid container  sx={wraper2}>
         <Grid container display={"flex"} spacing={1}  justifyContent={"center"}  sm={6} md={6}  xs={12} >
