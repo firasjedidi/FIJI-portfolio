@@ -6,7 +6,7 @@ const wraper={
   margin:{xs:"2em 0",sm:"9em 0em",md:"9em 0",lg:"0em" },
 }
 const wraper2={ 
-  margin:{xs:"-13em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }
+  margin:{xs:"-15em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }
 }
 // the previw of every work and picture and seemore button 
 // the smoth scroling desgin 
@@ -25,7 +25,7 @@ const wraper2={
           <Typography variant='h3' m={1.5}>
             who I Am
           </Typography>
-          <Typography  color={"InfoText"} m={1.5}>
+          <Typography  sx={{color:"#fff"}} m={1.5}>
           Hello once more I'm Firas Jedidi, a Tunisian citizen, and I'm not going to reveal my age for a few reasons. I studied computer science and dropped out of high school dropout before deciding to take a shortcut to become who I am today.
           </Typography>
           </Box>
