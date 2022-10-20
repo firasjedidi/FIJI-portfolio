@@ -34,7 +34,7 @@ const wraper={
           </Box>
         </Grid>
         <Grid item md={6}  xs={12} 
-            sx={{m:{sm:"-6.5em 1em" , md:"-4em 0"}}}
+            sx={{m:{sm:"-7em 1em" , md:"-4em 0"}}}
             >
               <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" 
               src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665838969/web-application-development-40-unscreen_q9jlef.gif" alt='developer' blurDataURL='true'/>
