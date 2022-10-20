@@ -18,7 +18,7 @@ const wraper={
   
 }
 const wraper2={ 
-  margin:{
+  p:{
     xs:" 0 ",
     sm:"1em 0.5em",
     md:"1em 5em",
@@ -30,7 +30,7 @@ const wraper2={
 const thecard={ 
   width: "100%",
   height:{ xs:"10.5em",sm:"12em",md:"12em",lg:"14em" },
-  margin:{xs:"0.1em 0.5em",sm:"2em 1em",md:"0.5em 0.5em",lg:"0.5em " },
+  margin:{xs:"0.1em 0.5em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   perspective:"800px",
   transition: "all 0.5s ease",
   backgroundColor: "#0A1929",
@@ -63,7 +63,7 @@ const theback={
   transition: "transform 1s",
   transform: "rotateY(180deg)",
   borderRadius:"0.5em",
-  padding:{xs:"1.5em 2em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
+  padding:{xs:"1.5em 0em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   
 } 
 
@@ -90,9 +90,9 @@ const Skils = () => {
           }} >Skills</Typography>
         <Typography variant='h4'>What I Can Do</Typography>
       </Box>
-      <Grid container display={"flex"} justifyContent={"center"} spacing={1}  sx={wraper2} >
+      <Grid container    direction="row"justifyContent="center" alignItems="center"spacing={{ xs: 2, md: 1 }}  sx={wraper2} >
         {skils.map((skil:any,id:number)=>(
-          <Grid item  md={4} sm={4}  xs={6} lg={4}
+          <Grid item  md={4} sm={4} xs={5}  lg={4} display={"flex"} justifyContent={"center"}
            key={id} 
             >
             <Paper sx={thecard} >

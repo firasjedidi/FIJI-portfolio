@@ -15,7 +15,7 @@ const wraper={
   
 }
 const wraper2={ 
-  margin:{
+  p:{
     xs:" 0.1em 1.5em",
     sm:"1em 0.5em",
     md:"1em 5em",
@@ -29,11 +29,11 @@ const wraper2={
 const thecard={ 
   position: "relative",
   width: "100%",
-  height: { xs:"10em",sm:"9em",md:"12em",lg:"14em" },
+  height: { xs:"9em",sm:"9em",md:"12em",lg:"14em" },
   margin:{xs:"0.5em",sm:"1em",md:"1em ",lg:"0.5em " },
   background:"  #0A1929" ,
   overflow:"hidden",
-
+  border:"none",
   "&:hover .img":{
     transform: "scale(1) translateY(-20px)",
   },
@@ -130,7 +130,7 @@ const thedescription={
       </Box>
       <Grid container  spacing={1} sx={wraper2} >
       {projects.map((project:any,id:number)=>(
-          <Grid item display={'flex'}  justifyContent={"center"} md={4} sm={4} xs={5}   
+          <Grid item display={'flex'}   justifyContent={"center"} md={4} sm={4} xs={5}   
           key={id} 
             >
             <Paper 
