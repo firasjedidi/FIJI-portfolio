@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const wraper={ 
   padding:{
-    xs:"3.5em 3em  0 3em ",
+    xs:"3.5em 2em  0 2em ",
     sm:"5.5em 2em  0 2em ",
     md:"5.5em 5.5em  0 5.5em ",
     lg:"4.5em 6em  0 6em " 
