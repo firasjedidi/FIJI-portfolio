@@ -6,7 +6,7 @@ const wraper={
   margin:{xs:"2em 0",sm:"9em 0em",md:"9em 0",lg:"0em" },
 }
 const wraper2={ 
-  margin:{xs:"-15em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }
+  margin:{xs:"-15.5em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }
 }
 // the previw of every work and picture and seemore button 
 // the smoth scroling desgin 

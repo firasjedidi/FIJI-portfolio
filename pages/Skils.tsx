@@ -50,7 +50,7 @@ const thefront={
   transition: "transform 1s",
   backgroundColor:"rgba(255, 255, 255, .1)",
   backfaceVisibility: "hidden",
-  borderRadius:"1em",
+  borderRadius:"0.5em",
   padding:{xs:"2em 0.5em",sm:"3em 1em",md:"1.5em 0.5em",lg:"1.5em  0.5em " },
 }
 const theback={
@@ -62,7 +62,7 @@ const theback={
   color:"white",
   transition: "transform 1s",
   transform: "rotateY(180deg)",
-  borderRadius:"1em",
+  borderRadius:"0.5em",
   padding:{xs:"1.5em 0.5em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   
 } 
