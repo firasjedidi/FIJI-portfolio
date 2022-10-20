@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import { Box, Container, Grid, Typography } from '@mui/material'
 const wraper={ 
-  margin:{xs:"1.5em 0",sm:"9em 0em",md:"9em 0",lg:"-1em" },
+  margin:{xs:"1em 0",sm:"9em 0em",md:"9em 0",lg:"-1em" },
 }
 // the previw of every work and picture and seemore button 
 // the smoth scroling desgin 
@@ -14,7 +14,7 @@ const wraper={
         <Grid item md={6} lg={6} sx={wraper} sm={6} xs={12}>
             <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" alt='developer'   src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852238/man-thinking-about-load-561228-unscreen_glybkn.gif"   blurDataURL='true' />
         </Grid>
-        <Grid item lg={6} md={6} sm={6} xs={12}  sx={{margin:{xs:"",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }}}>
+        <Grid item lg={6} md={6} sm={6} xs={12}  sx={{margin:{xs:"-12em 0",sm:"13em 0",md:"15em 01em",lg:"15em 3em" }}}>
           <Box>
           <Typography m={1.5} >
             ABOUT
