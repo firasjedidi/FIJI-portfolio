@@ -58,7 +58,7 @@ const slide={
   
   return (
     <section className={styles.section}>
-      <NavBar changeBgColor={true} />
+      <NavBar  />
       {project.map((project:any,id:number)=>(
         <div key={id}>
           <Box  position='absolute' top={0} left={0} width="100%" height="40vh"  >
@@ -71,7 +71,7 @@ const slide={
                 )}
               </Box>
             ))}
-            <Box position='absolute' top={"70%"}  margin={"0 1em"}>
+            <Box position='absolute' top={"65%"}  margin={"0 1em"}>
               <Typography variant='h4'>{project.name} </Typography>
               <Typography sx={{color:"#fff"}} >{project.role}</Typography>
               <Typography sx={{color:"#fff"}} >{project.duration}</Typography>

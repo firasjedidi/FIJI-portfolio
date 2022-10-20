@@ -19,10 +19,10 @@ import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle ,BsCodeS
 const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
 const links={
   m:{xs:"0.5em ",sm:"1.2em"},
-  p:{xs:"1.1em 3em",sm:"1.1em 2.5em"},
+  p:{xs:"1em 3em",sm:"1.1em 2.5em"},
   ":hover":{backgroundColor:"rgba(255,255,255,0.1)"},
 }
- const NavBar = ({changeBgColor}:any) => {
+ const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -36,8 +36,8 @@ const links={
 
 
   return (
-    <AppBar  sx={changeBgColor?{
-      background: "#0A1929",width: "100%",position:"absolute"}
+    <AppBar  sx={anchorElNav?{
+      background: "#0A1929",width: "100%",position:"absolute",}
      :{ background: "#0A1929",width: "100%",opacity:" 0.7",position:"absolute"}} >
     <Container >
       <Toolbar disableGutters >
@@ -81,14 +81,14 @@ const links={
             sx={{
               display: { xs: 'block', md: 'none' },
               backgroundColor:"rgba(0, 0, 0, 0.5)",position:"fixed",
-              top:"4em"
+              top:"3.5em"
             }}
           >
             <Paper sx={{
               backgroundColor:"#0A1929",position:"fixed",left:0,width:"50%",
               height: "100vh",top:"3.5em",transition:"ease-in",transitionDuration:"10ms",
              }}>
-              <Typography align='center'm={"2em 0.5em 1em"} color='#fff' >Let&apos;s build something legendary together</Typography>
+              <Typography align='center'm={"1em 0.5em 1em 0.5em"} color='#fff' >Let&apos;s build something legendary together</Typography>
              <Divider sx={{backgroundColor:"#fff"}} variant="middle" />
             {pages.map((page) => (
               <MenuItem key={page}   onClick={handleCloseNavMenu}sx={links} >
@@ -97,7 +97,7 @@ const links={
                 </Link>
               </MenuItem>
             ))}
-             <Typography align='left'm={"3em 2em 1em "}sx={{color:"#fff"}}  >Let&apos;s Connect</Typography>
+             <Typography align='left'm={"1em 2em 1em 2em"}sx={{color:"#fff"}}  >Let&apos;s Connect</Typography>
             <Divider sx={{backgroundColor:"#fff",justifyItems:"center"}} variant="middle" />
             <Box sx={{display:"flex",justifyContent:"space-between",m:{xs:"1em ",sm:"2em"},flex:""}}>
               <a href="https://www.linkedin.com/in/firas-jedidi-827328232/"  target="_blank" rel="noopener noreferrer ">
