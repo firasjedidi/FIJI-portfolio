@@ -19,7 +19,7 @@ const wraper={
 }
 const wraper2={ 
   padding:{
-    xs:" 0.1em",
+    xs:" 0",
     sm:"1em 0.5em",
     md:"1em 5em",
     lg:"1em 5em "

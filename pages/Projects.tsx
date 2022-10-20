@@ -16,7 +16,7 @@ const wraper={
 }
 const wraper2={ 
   margin:{
-    xs:" 0.5em",
+    xs:" 0",
     sm:"1em 0.5em",
     md:"1em 5em",
     lg:"2em 5em "
