@@ -19,7 +19,7 @@ const wraper={
 }
 const wraper2={ 
   p:{
-    xs:" 0 ",
+    xs:" 0.5em ",
     sm:"1em 0.5em",
     md:"1em 5em",
     lg:"1em 5em "
@@ -28,8 +28,8 @@ const wraper2={
 }
 
 const thecard={ 
-  width: "100%",
-  height:{ xs:"10.5em",sm:"12em",md:"12em",lg:"14em" },
+  width:{ xs:"60%",sm:"100%",md:"100%",lg:"100%" },
+  height:{ xs:"12.5em",sm:"13em",md:"12em",lg:"14em" },
   margin:{xs:"0.1em 0.5em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   perspective:"800px",
   transition: "all 0.5s ease",
@@ -51,7 +51,7 @@ const thefront={
   backgroundColor:"rgba(255, 255, 255, .1)",
   backfaceVisibility: "hidden",
   borderRadius:"0.5em",
-  padding:{xs:"2em 0.5em",sm:"3em 1em",md:"1.5em 0.5em",lg:"1.5em  0.5em " },
+  padding:{xs:"3em 1em",sm:"3em 1em",md:"1.5em 0.5em",lg:"1.5em  0.5em " },
 }
 const theback={
   position: "absolute",
@@ -80,7 +80,7 @@ const Skils = () => {
     }
   },[])
   return (
-    <section className={styles.section2} id="Skils" >
+    <section className={styles.section3} id="Skils" >
       <Box sx={wraper} >
         <Typography variant='h6' 
           sx={{
@@ -90,17 +90,18 @@ const Skils = () => {
           }} >Skills</Typography>
         <Typography variant='h4'>What I Can Do</Typography>
       </Box>
-      <Grid container    direction="row"justifyContent="center" alignItems="center"spacing={{ xs: 2, md: 1 }}  sx={wraper2} >
+      <Grid container    spacing={1}  sx={wraper2} >
         {skils.map((skil:any,id:number)=>(
-          <Grid item  md={4} sm={4} xs={5}  lg={4} display={"flex"} justifyContent={"center"}
+          <Grid item  md={4} sm={4} xs={12}  lg={4} display={"flex"} justifyContent={"center"}
            key={id} 
             >
-            <Paper sx={thecard} >
+            <Box sx={thecard} >
               <Box 
                 sx={thefront} 
                 className="front"
               >
-                <Image  src={skil.img}  layout='responsive'  alt='developer' blurDataURL='true' width="5em" height="2em" />
+                <Image  src={skil.img}  layout='responsive' sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
+                alt='developer' blurDataURL='true' width="5em" height="2em" />
                 <Typography align='center' noWrap>
                   {skil.name}
                   </Typography>
@@ -110,12 +111,9 @@ const Skils = () => {
                 className="back"
                >
                 {skil.skills.map((skill:any,index:number)=>(
-                  <List  key={index} disablePadding>
-                    <ListItem disablePadding 
-                      sx={{padding:{
-                        xs:"0.2em 0.2em",sm:"0.4em 1em",
-                        md:"0.5em 3em",lg:"0.7em 6em"
-                      }}}>
+                  <List  key={index} disablePadding >
+                    <ListItem 
+                      >
                       <ListItemAvatar >
                         <Avatar sx={{ width: 24, height: 24 }} src={skill.link} />
                       </ListItemAvatar>
@@ -132,7 +130,7 @@ const Skils = () => {
                   </List>
                 ))}
               </Box>
-            </Paper>
+            </Box>
           </Grid>
         ))}
      </Grid>

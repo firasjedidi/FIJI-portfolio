@@ -28,7 +28,7 @@ const wraper2={
 
 const thecard={ 
   position: "relative",
-  width: "100%",
+  width:{ xs:"60%",sm:"100%",md:"100%",lg:"100%" },
   height: { xs:"9em",sm:"9em",md:"12em",lg:"14em" },
   margin:{xs:"0.5em",sm:"1em",md:"1em ",lg:"0.5em " },
   background:"  #0A1929" ,
@@ -119,7 +119,7 @@ const thedescription={
   }
   },[])
   return (
-    <section className={styles.section2} id="Projects" >
+    <section className={styles.section4} id="Projects" >
        <Box sx={wraper}  >
         <Typography variant='h6' 
           sx={{
@@ -130,13 +130,13 @@ const thedescription={
       </Box>
       <Grid container  spacing={1} sx={wraper2} >
       {projects.map((project:any,id:number)=>(
-          <Grid item display={'flex'}   justifyContent={"center"} md={4} sm={4} xs={5}   
+          <Grid item display={'flex'}   justifyContent={"center"} md={4} sm={4} xs={12}   
           key={id} 
             >
             <Paper 
              sx={thecard}
             >
-                <Image src={project.img[0]} className={"img"}  blurDataURL='true'  alt='developer'
+                <Image src={project.img[0]} className={"img"}    blurDataURL='true'  alt='developer'
                 layout='responsive'  width="100%" height="100%"     />
              <Box  
              sx={thedescription}
