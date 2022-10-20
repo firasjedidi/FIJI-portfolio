@@ -20,7 +20,7 @@ const wraper={
                 options={{
                   strings: 
                   ['Hello, There',
-                   'I\'\m Firas',
+                   'I\'\m FIJI',
                    'I\'\m  Full-Stack Developer'],
                   autoStart: true, 
                   loop:true
@@ -28,7 +28,8 @@ const wraper={
               /> 
             </Typography>
             <Typography  sx={{color:"#fff"}}  marginTop={2}>
-             Hi, I&apos;m a full-stack JS developer, I&apos;m a hard worker, and a fast learner, currently, I&apos;m looking for an excellent position to develop my technical skills.
+            Hi, If you&apos;re wondering how the hell this guy is, scroll down if you don&apos;t already.
+            
             </Typography>
           </Box>
         </Grid>
