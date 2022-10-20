@@ -21,13 +21,13 @@
 .section3{
   width:100%;
  display: inline-block;
- height: 185vh;
+ height: 200vh;
  scroll-snap-align:start;
 }
 .section4{
   width:100%;
  display: inline-block;
- height: 160vh;
+ height: 180vh;
  scroll-snap-align:start;
 }
 .about{

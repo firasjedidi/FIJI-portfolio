@@ -130,7 +130,7 @@ const thedescription={
       </Box>
       <Grid container  spacing={1} sx={wraper2} >
       {projects.map((project:any,id:number)=>(
-          <Grid item display={'flex'}   justifyContent={"center"} md={4} sm={4} xs={12}   
+          <Grid item display={'flex'}   justifyContent={"center"} md={4} sm={4} xs={6}   
           key={id} 
             >
             <Paper 

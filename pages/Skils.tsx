@@ -92,7 +92,7 @@ const Skils = () => {
       </Box>
       <Grid container    spacing={1}  sx={wraper2} >
         {skils.map((skil:any,id:number)=>(
-          <Grid item  md={4} sm={4} xs={12}  lg={4} display={"flex"} justifyContent={"center"}
+          <Grid item  md={4} sm={4} xs={6}  lg={4} display={"flex"} justifyContent={"center"}
            key={id} 
             >
             <Box sx={thecard} >
@@ -100,7 +100,7 @@ const Skils = () => {
                 sx={thefront} 
                 className="front"
               >
-                <Image  src={skil.img}  layout='responsive' sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
+                <Image  src={skil.img}  layout='responsive' 
                 alt='developer' blurDataURL='true' width="5em" height="2em" />
                 <Typography align='center' noWrap>
                   {skil.name}
