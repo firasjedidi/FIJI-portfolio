@@ -16,7 +16,7 @@ const wraper={
 }
 const wraper2={ 
   margin:{
-    xs:" 0",
+    xs:" 0.1em 1.5em",
     sm:"1em 0.5em",
     md:"1em 5em",
     lg:"2em 5em "
@@ -128,7 +128,7 @@ const thedescription={
           }} >Projects</Typography>
           <Typography variant='h4'>What I&#39;ve Built</Typography>
       </Box>
-      <Grid container display={'flex'} flex="wrap" justifyContent={"center"}   spacing={1} sx={wraper2} >
+      <Grid container  spacing={1} sx={wraper2} >
       {projects.map((project:any,id:number)=>(
           <Grid item display={'flex'}  justifyContent={"center"} md={4} sm={4} xs={5}   
           key={id} 

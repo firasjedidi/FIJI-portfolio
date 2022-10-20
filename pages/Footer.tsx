@@ -27,11 +27,7 @@ const wraper2={
   return (
      <section className={styles.section2} id="Contact" >
       <Box sx={wraper} >
-        <Typography variant='h6' 
-          sx={{
-            padding:
-             {xs:"0.1em 0",sm:"0.5em 0"}
-          }} >Projects</Typography>
+        
           <Typography variant='h4'>Get In Touch</Typography>
       </Box>
       <Grid container  sx={wraper2}>
