@@ -26,7 +26,7 @@ const wraper2={
             who I Am
           </Typography>
           <Typography  sx={{color:"#fff"}} m={1.5}>
-          Hello once more I'm Firas Jedidi, a Tunisian citizen, and I'm not going to reveal my age for a few reasons. I studied computer science and dropped out of high school dropout before deciding to take a shortcut to become who I am today.
+          Hello once more I&apos;m Firas Jedidi, a Tunisian citizen, and I&apos;m not going to reveal my age for a few reasons. I studied computer science and dropped out of high school dropout before deciding to take a shortcut to become who I am today.
           </Typography>
           </Box>
         </Grid>

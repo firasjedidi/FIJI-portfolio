@@ -63,7 +63,7 @@ const theback={
   transition: "transform 1s",
   transform: "rotateY(180deg)",
   borderRadius:"0.5em",
-  padding:{xs:"1.5em 0.5em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
+  padding:{xs:"1.5em 2em",sm:"1em 1em",md:"0.5em 0.5em",lg:"0.5em " },
   
 } 
 
@@ -90,10 +90,10 @@ const Skils = () => {
           }} >Skills</Typography>
         <Typography variant='h4'>What I Can Do</Typography>
       </Box>
-      <Grid container  spacing={1}  sx={wraper2} >
+      <Grid container display={"flex"} justifyContent={"center"} spacing={1}  sx={wraper2} >
         {skils.map((skil:any,id:number)=>(
           <Grid item  md={4} sm={4}  xs={6} lg={4}
-           key={id} display={"flex"} justifyContent={"center"}
+           key={id} 
             >
             <Paper sx={thecard} >
               <Box 
