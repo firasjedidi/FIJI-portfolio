@@ -83,6 +83,7 @@ const slide={
               <Typography variant="h6" p={"1em 0"}>Project</Typography>
               <Typography sx={{color:"#fff"}}  >{project.intro}</Typography>
               <IconButton href={project.github} ><MdOutlineOpenInNew color='white'/></IconButton> 
+              {project.github2 &&( <IconButton href={project.github2} ><MdOutlineOpenInNew color='white'/></IconButton>)}
             </Grid>
 
             <Grid item lg={2} sm={5} md={4} xs={12}>

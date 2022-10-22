@@ -1,40 +1,25 @@
 import React from 'react'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
+import { AppBar,Box,Toolbar,IconButton,Typography,Menu,Container,Paper,MenuItem,Icon ,Divider} from "@mui/material";
+import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle ,BsCodeSlash} from "react-icons/bs";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import MenuItem from '@mui/material/MenuItem';
-import Icon from '@mui/material/Icon';
-import styles from '../styles/Home.module.css'
-import Divider from '@mui/material/Divider';
-import Link from '@mui/material/Link';
-import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle ,BsCodeSlash} from "react-icons/bs";
+import Link from 'next/link';
 const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
 const links={
   m:{xs:"0.5em ",sm:"1.2em"},
   p:{xs:"1em 3em",sm:"1.1em 2.5em"},
-  ":hover":{backgroundColor:"rgba(255,255,255,0.1)"},
+  ":hover":{
+    backgroundColor:"rgba(255,255,255,0.1)"
+  },
 }
  const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-    
+    setAnchorElNav(event.currentTarget); 
   };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-
   return (
     <AppBar  sx={anchorElNav?{
       background: "#0A1929",width: "100%",position:"absolute",}
@@ -91,8 +76,10 @@ const links={
               <Typography align='center'm={"1em 0.5em 1em 0.5em"} color='#fff' >Let&apos;s build something legendary together</Typography>
              <Divider sx={{backgroundColor:"#fff"}} variant="middle" />
             {pages.map((page) => (
-              <MenuItem key={page}   onClick={handleCloseNavMenu}sx={links} >
-                <Link href={`/#${page}`} color="#fff" underline="none" sx={{width:"100%"}}  >
+              <MenuItem key={page}   onClick={handleCloseNavMenu} sx={links} >
+                <Link 
+                  href={`/#${page}`} 
+                 >
                   {page} 
                 </Link>
               </MenuItem>
@@ -143,17 +130,16 @@ const links={
         >
           FIJI
         </Typography>
+
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } ,justifyContent:"space-around"}}>
-          {pages.map((page) => (
-            <Link
-              key={page}
-              onClick={handleCloseNavMenu}
-              href={`/#${page}`}
-              sx={{ margin: 2, color: 'white', display: 'block' }}
-              underline="none"
-              > 
-              {page}
-            </Link>
+          {pages.map((page) => (        
+            <Typography key={page} onClick={handleCloseNavMenu} >
+              <Link   
+                  href={`/#${page}`} 
+                > 
+                 {page}
+              </Link>
+            </Typography>
           ))}
         </Box>
 

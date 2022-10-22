@@ -5,7 +5,7 @@ import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle } from "
 import Image from 'next/image';
 import Divider from '@mui/material/Divider';
 const wraper={ 
-  padding:{
+  m:{
     xs:"5em 6em  0 6em  ",
     sm:"5.5em 6em  0 6em ",
     md:"5.5em 8em  0 8em ",
