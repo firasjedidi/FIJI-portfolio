@@ -21,6 +21,12 @@
 .section3{
   width:100%;
  display: inline-block;
+ height: 140vh;
+ scroll-snap-align:start;
+}
+.section4{
+  width:100%;
+ display: inline-block;
  height: 130vh;
  scroll-snap-align:start;
 }

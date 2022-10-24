@@ -38,7 +38,7 @@ const thecard={
     transform: "scale(1) translateY(-20px)",
   },
   ".img":{
-    transform: "scale(1.2)",
+    transform: "scale(1.1)",
     transition: "all 0.3s ease-out",
     backgroundClip: "padding-box", 
   },
@@ -119,7 +119,7 @@ const thedescription={
   }
   },[])
   return (
-    <section className={styles.section3} id="Projects" >
+    <section className={styles.section4} id="Projects" >
        <Box sx={wraper}  >
         <Typography variant='h6' 
           sx={{
@@ -136,8 +136,8 @@ const thedescription={
             <Paper 
              sx={thecard}
             >
-                <Image src={project.img[0]} className={"img"}    blurDataURL='true'  alt='developer'
-                layout='responsive'  width="100%" height="100%"     />
+                <Image src={project.cover} className={"img"}    blurDataURL='true'  alt='developer'
+                layout='responsive'  width="90%" height="90%"     />
              <Box  
              sx={thedescription}
               className={"description"} 

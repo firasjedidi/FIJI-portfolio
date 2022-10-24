@@ -16,7 +16,7 @@ const slide={
     height: "100%",
     opacity: 0,
     transform: "translateX(-50%)",
-    transition: "all 0.7s ease-in",
+    transition: "all 0.4s ease-in",
     },
     ".current" :{
     opacity: 1,
@@ -61,7 +61,7 @@ const slide={
       <NavBar  />
       {project.map((project:any,id:number)=>(
         <div key={id}>
-          <Box  position='absolute' top={0} left={0} width="100%" height="40vh"  >
+          <Box  position='absolute' top={0} left={0} width="100%" height="60vh"  >
            {project.img.map((src:string,index:number)=>(
               <Box  key={index} sx={slide} className={index === currentSlide?"slide current":"slide"} >
                 {index === currentSlide &&(
@@ -71,19 +71,23 @@ const slide={
                 )}
               </Box>
             ))}
-            <Box position='absolute' top={"65%"}  margin={"0 1em"}>
+            <Box position='absolute' top={"75%"}  margin={"0 1em"}>
               <Typography variant='h4'>{project.name} </Typography>
               <Typography sx={{color:"#fff"}} >{project.role}</Typography>
               <Typography sx={{color:"#fff"}} >{project.duration}</Typography>
             </Box>
           </Box>  
  
-          <Grid container justifyContent={"space-around"}   m={"21em 0"}   padding={2} gap={7} >
+          <Grid container justifyContent={"space-around"}   m={"29em 0"}   padding={2} gap={7} >
             <Grid item lg={7} sm={5} md={4}xs={12}>
               <Typography variant="h6" p={"1em 0"}>Project</Typography>
               <Typography sx={{color:"#fff"}}  >{project.intro}</Typography>
               <IconButton href={project.github} ><MdOutlineOpenInNew color='white'/></IconButton> 
-              {project.github2 &&( <IconButton href={project.github2} ><MdOutlineOpenInNew color='white'/></IconButton>)}
+              {project.github2 &&(
+                <IconButton href={project.github2} >
+                  <MdOutlineOpenInNew color='white'/>
+                </IconButton>
+              )}
             </Grid>
 
             <Grid item lg={2} sm={5} md={4} xs={12}>
