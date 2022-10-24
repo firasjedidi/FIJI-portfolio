@@ -71,7 +71,7 @@ const slide={
                 )}
               </Box>
             ))}
-            <Box position='absolute' top={"75%"}  margin={"0 1em"}>
+            <Box position='absolute' top={"69%"}  margin={"0 1em"}>
               <Typography variant='h4'>{project.name} </Typography>
               <Typography sx={{color:"#fff"}} >{project.role}</Typography>
               <Typography sx={{color:"#fff"}} >{project.duration}</Typography>
