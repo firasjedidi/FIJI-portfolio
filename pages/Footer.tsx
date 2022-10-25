@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import {  Container, Grid, Link  ,Typography,Box} from '@mui/material'
+import {  Container, Grid, Link  ,Typography,Box ,Stack } from '@mui/material'
 import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle } from "react-icons/bs";
 import Image from 'next/image';
-import Divider from '@mui/material/Divider';
+
 const wraper={ 
   m:{
     xs:"5em 6em  0 6em  ",
@@ -24,11 +24,12 @@ const wraper2={
 }
 //footer contains all my links withe peace emoji 
   const Footer = () => {
+    console.clear()
   return (
      <section className={styles.section2} id="Contact" >
-      <Box sx={wraper} >
+      <Stack  sx={wraper} >
           <Typography variant='h4' >Get In Touch</Typography>
-      </Box>
+      </Stack >
       <Grid container  sx={wraper2}>
         <Grid container display={"flex"} spacing={1}  justifyContent={"center"}  sm={6} md={6}  xs={12} >
             <Grid item   xs={3} sm={3} md={3}  lg={3} style={{margin:"0.5em "}}  >
@@ -68,11 +69,11 @@ const wraper2={
         <Grid item sm={6} md={6}  xs={12}
             >
               <Image layout="responsive" width="100%"  height="100%"   alt='developer'
-              src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852048/young-say-hello-4788642-398830-unscreen_ypc1np.gif" blurDataURL='true' />
+              src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852048/young-say-hello-4788642-398830-unscreen_ypc1np.gif" 
+              loading='lazy' blurDataURL='true' />
         </Grid>
       </Grid>
-      {/* <Divider sx={{backgroundColor:"ButtonFace" ,marginTop:"16em"}} variant="fullWidth" />
-      <Typography align='center' margin={"1em 0"}> ©Copyright 2022</Typography> */}
+   
     </section>
     
   )

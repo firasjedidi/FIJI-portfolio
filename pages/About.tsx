@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import { Box, Container, Grid, Typography } from '@mui/material'
+
 const wraper={ 
   margin:{xs:"2em 0",sm:"9em 0em",md:"9em 0",lg:"0em" },
 }
@@ -15,7 +16,10 @@ const wraper2={
     <section className={styles.section} id="About"  >
       <Grid container justifyContent={"center"} spacing={1} >
         <Grid item md={6} lg={6} sx={wraper} sm={6} xs={12}>
-            <Image layout="responsive" width={40}  height={40}  objectFit="scale-down" alt='developer'   src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852238/man-thinking-about-load-561228-unscreen_glybkn.gif"   blurDataURL='true' />
+            <Image layout="responsive" width={40}  height={40}  
+            objectFit="scale-down" alt='developer'   
+            src="https://res.cloudinary.com/dod9yhmlt/image/upload/v1665852238/man-thinking-about-load-561228-unscreen_glybkn.gif" 
+            loading='lazy'   blurDataURL='true' />
         </Grid>
         <Grid item lg={6} md={6} sm={6} xs={12} >
           <Box sx={wraper2}>

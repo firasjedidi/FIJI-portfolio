@@ -65,13 +65,13 @@ const slide={
            {project.img.map((src:string,index:number)=>(
               <Box  key={index} sx={slide} className={index === currentSlide?"slide current":"slide"} >
                 {index === currentSlide &&(
-                    <Image src={src} className={styles.col} alt='developer'
+                    <Image src={src} className={styles.col} alt='developer' loading='lazy' 
                     layout='fill' objectFit="cover" style={{position:"absolute", background:" rgb(0, 0, 0)",
-                    opacity:".6"}} />
+                    opacity:".6"}}  />
                 )}
               </Box>
             ))}
-            <Box position='absolute' top={"69%"}  margin={"0 1em"}>
+            <Box position='absolute' top={"68%"}  margin={"0 1em"}>
               <Typography variant='h4'>{project.name} </Typography>
               <Typography sx={{color:"#fff"}} >{project.role}</Typography>
               <Typography sx={{color:"#fff"}} >{project.duration}</Typography>

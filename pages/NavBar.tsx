@@ -4,6 +4,7 @@ import { BsLinkedin,BsInstagram,BsGithub,BsWhatsapp,BsFacebook,BsGoogle ,BsCodeS
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
+import useMediaQuery from '@mui/material/useMediaQuery';
 const pages = ['Home', 'About', 'Skils', 'Projects', 'Contact'];
 const links={
   m:{xs:"0.5em ",sm:"1.2em"},
@@ -14,6 +15,7 @@ const links={
 }
  const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const matches = useMediaQuery('(min-width:600px)');
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget); 
   };
@@ -26,8 +28,7 @@ const links={
      :{ background: "#0A1929",width: "100%",opacity:" 0.7",position:"absolute"}} >
     <Container >
       <Toolbar disableGutters >
-        <Icon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}> <BsCodeSlash  /></Icon>
-       
+        <Icon sx={{ display: matches ?'flex':"none", mr: 1 }}> <BsCodeSlash  /></Icon>
         <Typography
           variant="h6"
           noWrap
@@ -35,7 +36,7 @@ const links={
           href="/"
           sx={{
             mr: 2,
-            display: { xs: 'none', md: 'flex' },
+            display: matches?'flex':"none",
             fontFamily: 'Lucida Handwriting',
             fontWeight: 700,
             letterSpacing: '.3rem',
@@ -46,7 +47,7 @@ const links={
           FIJI
         </Typography>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }  }}>
+        <Box sx={{ flexGrow: 1, display: !matches?"flex":"none"  }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -56,7 +57,6 @@ const links={
             color="inherit"
           >
             {Boolean(anchorElNav)? <CloseIcon  />:<MenuIcon />}
-          
           </IconButton>
           <Menu
             id="menu-appbar"
@@ -109,8 +109,7 @@ const links={
           </Paper>
           </Menu>
         </Box>
-        <Icon sx={{ display:{ xs: 'flex', md: 'none' }, mr: 1 }}> <BsCodeSlash  /></Icon>
-      
+        <Icon sx={{ display:!matches?"flex":"none", mr: 1 }}> <BsCodeSlash  /></Icon>
         <Typography
           variant="h5"
           noWrap
@@ -118,7 +117,7 @@ const links={
           href="/"
           sx={{
             mr: 2,
-            display: { xs: 'flex', md: 'none' },
+            display: !matches?"flex":"none",
             flexGrow: 1,
             fontFamily: 'Lucida Handwriting',
             fontWeight: 700,
@@ -131,7 +130,7 @@ const links={
           FIJI
         </Typography>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } ,justifyContent:"space-around"}}>
+        <Box sx={{ flexGrow: 1, display:matches?"flex":"none" ,justifyContent:"space-around"}}>
           {pages.map((page) => (        
             <Typography key={page} onClick={handleCloseNavMenu} >
               <Link   

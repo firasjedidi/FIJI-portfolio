@@ -137,7 +137,7 @@ const thedescription={
              sx={thecard}
             >
                 <Image src={project.cover} className={"img"}    blurDataURL='true'  alt='developer'
-                layout='responsive'  width="90%" height="90%"     />
+                layout='responsive'  width="90%" height="90%"  loading='lazy'     />
              <Box  
              sx={thedescription}
               className={"description"} 

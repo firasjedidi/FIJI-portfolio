@@ -5,7 +5,7 @@ import
     Container, Grid, Paper, Typography,Box ,List ,ListItem ,
     Divider,ListItemText,ListItemAvatar ,Avatar    
   } from '@mui/material'
-// import skils from './api/skils';
+
 import Image from 'next/image';
 
 const wraper={ 
@@ -95,18 +95,18 @@ const Skils = () => {
           <Grid item  md={4} sm={4} xs={6}  lg={4} display={"flex"} justifyContent={"center"}
            key={id} 
             >
-            <Box sx={thecard} >
-              <Box 
+            <Grid sx={thecard} >
+              <Grid 
                 sx={thefront} 
                 className="front"
               >
                 <Image  src={skil.img}  layout='responsive' 
-                alt='developer' blurDataURL='true' width="5em" height="2em" />
+                alt='developer' blurDataURL='true' width="5em" height="2em" loading='lazy' />
                 <Typography align='center' noWrap>
                   {skil.name}
                   </Typography>
-              </Box>
-              <Box 
+              </Grid>
+              <Grid 
                 sx={theback} 
                 className="back"
                >
@@ -129,8 +129,8 @@ const Skils = () => {
                     </ListItem>
                   </List>
                 ))}
-              </Box>
-            </Box>
+              </Grid>
+            </Grid>
           </Grid>
         ))}
      </Grid>

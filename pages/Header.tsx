@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Typewriter from 'typewriter-effect';
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image';
+
 const wraper={ 
   margin:{xs:"3em 0",sm:"3em 0",md:"7em 0",lg:"9em 0" },
 }
