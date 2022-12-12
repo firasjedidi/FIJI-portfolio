@@ -69,7 +69,7 @@ const projects=[
             "MYSQL "
         ],
         achievement :["learned how to be more organized"],
-        github:"",
+        github:"https://github.com/firasjedidi/blog",
         role:"Developer&&Product-Owner/solo",
         duration:"unfinished",
         cover:"https://res.cloudinary.com/dod9yhmlt/image/upload/v1666628546/Vite_App_-_Google_Chrome_24_10_2022_17_04_29_joqgkt.png",
